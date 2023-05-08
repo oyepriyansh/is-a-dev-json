@@ -1,143 +1,146 @@
 #isadevgen {
-    display: flex;
-    justify-content: center;
-  }
-  
-  #center {
-    width: 300px;
-    margin: 0 auto;
-  }
-  
-  label {
-    display: block;
-    margin-top: 10px;
-  }
-  
-  button {
-    margin-top: 10px;
-  }
-  
-  #jsonOutput,
-  #copyButton {
-    display: none;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #202124;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  .container {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #292b2e;
-    padding: 20px;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 300px;
-    padding: 8px;
-    background-color: #44464a;
-    border: none;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-    color: #fff;
-  }
-  
-  #jsonOutput {
-    height: 100px;
-    width: 300px;
-  
-  }
-  
-  #rci {
-    height: 100px;
-    width: 300px;
-  }
-  
-  #jsonOutput {
-    height: 200px;
-  }
-  
-  #recordContainer {
-    margin-bottom: 20px;
-  }
-  
-  .recordRow {
-    display: inline-block;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .recordRow label {
-    margin-right: 10px;
-  }
-  
-  .recordRow select,
-  .recordRow textarea {
-    flex: 1 0 100%;
-    padding: 8px;
-    background-color: #44464a;
-    border: none;
-    border-radius: 4px;
-    box-sizing: border-box;
-    color: #fff;
-    margin-top: 5px;
-  }
-  
-  button svg {
-    margin-top: 2px;
-    margin-bottom: -2px;
-    margin-right: 2px;
-    margin-left: -3px;
-    fill: currentColor;
-    height: 18px;
-    width: 18px;
-  }
-  
-  button {
-    background-color: #2b3031;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #555;
-  }
-  
-  .star {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 10px;
-    background-color: #2c3e50;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .star:hover {
-    background-color: #34495e;
-  }
+  display: flex;
+  justify-content: center;
+}
+
+#center {
+  width: 300px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+#jsonOutput,
+#copyButton {
+  display: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #252526;
+  color: #f0f0f0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 300px;
+  padding: 10px;
+  background-color: #2c2c2c;
+  border: none;
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  color: #f0f0f0;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px #3498db;
+}
+
+#jsonOutput {
+  height: 200px;
+  width: 300px;
+  padding: 10px;
+  background-color: #2c2c2c;
+  border: none;
+  border-radius: 20px;
+  box-sizing: border-box;
+  color: #f0f0f0;
+  font-size: 16px;
+  resize: none;
+}
+
+#rci {
+  height: 100px;
+  width: 300px;
+}
+
+#recordContainer {
+  margin-bottom: 20px;
+}
+
+.recordRow {
+  display: inline-block;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.recordRow label {
+  margin-right: 10px;
+}
+
+.recordRow select,
+.recordRow textarea {
+  flex: 1 0 100%;
+  padding: 10px;
+  background-color: #2c2c2c;
+  border: none;
+  border-radius: 20px;
+  box-sizing: border-box;
+  color: #f0f0f0;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+button svg {
+  margin-top: 2px;
+  margin-bottom: -2px;
+  margin-right: 2px;
+  margin-left: -3px;
+  fill: currentColor;
+  height: 18px;
+  width: 18px;
+}
+
+button {
+  background-color: #3498db;
+  color: #f0f0f0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.star {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background
+}
