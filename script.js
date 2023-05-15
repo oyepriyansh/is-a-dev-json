@@ -81,7 +81,6 @@ function copyJSON() {
 function generateJSON() {
   var username = document.getElementById("usernameInput").value.trim();
   var email = document.getElementById("emailInput").value.trim();
-  var discord = document.getElementById("discordInput").value.trim();
   var description = document.getElementById("descriptionInput").value.trim();
 
   if (!username) {
@@ -101,10 +100,6 @@ function generateJSON() {
   } else {
     alert("Email is a required field.");
     return;
-  }
-
-  if (discord) {
-    data.owner.discord = discord;
   }
 
   if (description) {
