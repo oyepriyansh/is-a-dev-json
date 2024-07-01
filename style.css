@@ -1,32 +1,13 @@
-#isadevgen {
-  display: flex;
-  justify-content: center;
-}
-
-#center {
-  width: 300px;
-  margin: 0 auto;
-}
-
-label {
-  display: block;
-  margin-top: 10px;
-}
-
-button {
-  margin-top: 10px;
-}
-
-#jsonOutput,
-#copyButton {
-  display: none;
-}
-
 body {
   font-family: Arial, sans-serif;
   background-color: #252526;
   color: #f0f0f0;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .container {
@@ -36,25 +17,46 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  text-align: center;
 }
 
 h1 {
   text-align: center;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+#isadevgen {
+  display: flex;
+  justify-content: center;
+}
+
+#center {
+  width: 100%;
+  max-width: 400px;
 }
 
 label {
   display: block;
-  margin-bottom: 5px;
+  margin-top: 10px;
+  text-align: left;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 300px;
+  width: 100%;
   padding: 10px;
   background-color: #2c2c2c;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
   box-sizing: border-box;
   margin-bottom: 10px;
   color: #f0f0f0;
@@ -70,20 +72,19 @@ textarea:focus {
 
 #jsonOutput {
   height: 200px;
-  width: 300px;
   padding: 10px;
   background-color: #2c2c2c;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
   box-sizing: border-box;
   color: #f0f0f0;
   font-size: 16px;
   resize: none;
+  display: none;
 }
 
 #rci {
   height: 100px;
-  width: 300px;
 }
 
 #recordContainer {
@@ -91,8 +92,6 @@ textarea:focus {
 }
 
 .recordRow {
-  display: inline-block;
-  align-items: center;
   margin-bottom: 10px;
 }
 
@@ -102,25 +101,15 @@ textarea:focus {
 
 .recordRow select,
 .recordRow textarea {
-  flex: 1 0 100%;
+  width: 100%;
   padding: 10px;
   background-color: #2c2c2c;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
   box-sizing: border-box;
   color: #f0f0f0;
   margin-top: 5px;
   font-size: 16px;
-}
-
-button svg {
-  margin-top: 2px;
-  margin-bottom: -2px;
-  margin-right: 2px;
-  margin-left: -3px;
-  fill: currentColor;
-  height: 18px;
-  width: 18px;
 }
 
 button {
@@ -128,19 +117,68 @@ button {
   color: #f0f0f0;
   padding: 10px 20px;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease;
+  margin-top: 10px;
 }
 
 button:hover {
   background-color: #2980b9;
 }
 
-.star {
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 20px;
-  background
+button svg,
+button i {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+#copyButton {
+  display: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 14px;
+  }
+
+  button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  #jsonOutput {
+    font-size: 14px;
+    height: 150px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 12px;
+    padding: 8px;
+  }
 }
